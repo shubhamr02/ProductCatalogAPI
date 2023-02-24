@@ -1,10 +1,11 @@
 package com.ecomm.ProductCatalog.Model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "products")
 public class ProductDTO {
-
+    @Id
     public String product_id;
     public String product_name;
     public String product_type;
